@@ -4,6 +4,9 @@ from tools.tool_registry import ToolRegistry
 
 
 class ProfileAgent(BaseAgent):
+
+    INTENT = "profile"
+
     def handle(self, user_input):
 
         if "profile" in user_input.lower():
