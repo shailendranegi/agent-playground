@@ -5,6 +5,11 @@ from tools.tool_registry import ToolRegistry
 class ManagerAgent(BaseAgent):
 
     INTENT = "manager"
+    DESCRIPTION = "Handles manager information"
+    PHRASES = [
+        "manager",
+        "reporting manager"
+    ]
 
     def handle(self, user_input):
         if "manager" in user_input.lower():
