@@ -5,6 +5,12 @@ from tools.tool_registry import ToolRegistry
 class LeaveAgent(BaseAgent):
 
     INTENT = "leave"
+    DESCRIPTION = "Handles leave related requests"
+    PHRASES = [
+        "leave",
+        "vacation",
+        "holiday"
+    ]
 
     def handle(self, user_input):
 
