@@ -5,6 +5,12 @@ from tools.tool_registry import ToolRegistry
 class SalaryAgent(BaseAgent):
 
     INTENT = "salary"
+    DESCRIPTION = "Handles salary requests"
+    PHRASES = [
+        "salary",
+        "pay",
+        "income"
+    ]
 
     def handle(self, user_input):
 
