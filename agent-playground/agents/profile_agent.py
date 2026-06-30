@@ -6,6 +6,11 @@ from tools.tool_registry import ToolRegistry
 class ProfileAgent(BaseAgent):
 
     INTENT = "profile"
+    DESCRIPTION = "Handles employee profile"
+    PHRASES = [
+        "profile",
+        "designation"
+    ]
 
     def handle(self, user_input):
 
